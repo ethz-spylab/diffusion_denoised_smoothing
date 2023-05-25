@@ -1,11 +1,12 @@
 # Diffusion Denoised Smoothing
 
-This is a PyTorch implementation of **Diffusion Denoised Smoothing**, from the following paper:
+This is a PyTorch implementation of **Diffusion Denoised Smoothing**, proposed in our ICLR 2023 paper:
 
-[(Certified!!) Adversarial Robustness for Free!](https://openreview.net/forum?id=JLg5aHHv7j). ICLR 2023. \
-Nicholas Carlini*, Florian Tramèr*, Krishnamurthy Dvijotham, Leslie Rice, Mingjie Sun, Zico Kolter
+>(Certified!!) Adversarial Robustness for Free!      
+>Nicholas Carlini*, Florian Tramèr*, Krishnamurthy Dvijotham, Leslie Rice, Mingjie Sun, J. Zico Kolter   
 
-This repository is based on [locuslab/smoothing](https://github.com/locuslab/smoothing), [openai/improved-diffusion](https://github.com/openai/improved-diffusion) and [openai/guided-diffusion](https://github.com/openai/guided-diffusion).
+For more details, please check out our [<ins>**paper**</ins>](https://arxiv.org/abs/2206.10550).
+
 
 ---
 We show how to achieve state-of-the-art certified adversarial robustness to 2-norm bounded perturbations by relying exclusively on off-the-shelf pretrained models.
@@ -13,6 +14,9 @@ We show how to achieve state-of-the-art certified adversarial robustness to 2-no
 <img src="algo.png" width=100% height=100% 
 class="center">
 </p>
+
+This repository is based on [locuslab/smoothing](https://github.com/locuslab/smoothing), [openai/improved-diffusion](https://github.com/openai/improved-diffusion) and [openai/guided-diffusion](https://github.com/openai/guided-diffusion).
+
 
 ## Setup
 Create an new conda virtual environment:
@@ -51,7 +55,6 @@ python imagenet/certify.py \
 --sigma 1.00 --skip 50 --N0 100 --N 10000 --batch_size 200 \
 --outfile [file to store certification results]
 ```
-
 ## License
 This project is released under the MIT license. Please see the [LICENSE](LICENSE) file for more information.
 
@@ -59,7 +62,7 @@ This project is released under the MIT license. Please see the [LICENSE](LICENSE
 If you find this repository helpful, please consider citing:
 ```
 @Article{carlini2023free,
-  author  = {Nicholas Carlini and Florian Tramèr and Krishnamurthy Dvijotham and Leslie Rice and Mingjie Sun and Zico Kolter},
+  author  = {Carlini, Nicholas and Tramèr, Florian and Dvijotham, Krishnamurthy and Rice, Leslie and Sun, Mingjie and Kolter, Zico},
   title   = {(Certified!!) Adversarial Robustness for Free!},
   journal = {International Conference on Learning Representations (ICLR)},
   year    = {2023},
